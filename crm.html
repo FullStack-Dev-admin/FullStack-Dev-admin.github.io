@@ -781,11 +781,98 @@
     </form>
   </div>
 
-  <!-- CRM Settings Section -->
-  <div id="crm-settings" class="content-section">
+<!-- CRM Settings Page -->
+<div id="crm-settings" class="content-section">
     <h3>CRM Settings</h3>
-    <p>Configure your CRM system settings here.</p>
+    <p>Customize your CRM preferences and settings below:</p>
+  
+    <!-- Sidebar Navigation -->
+    <div id="settings-sidebar" style="float: left; width: 20%; margin-right: 20px;">
+      <ul style="list-style-type: none; padding-left: 0;">
+        <li><a href="#general-settings" style="display: block; padding: 10px; background-color: #f1f1f1; border-radius: 6px; margin-bottom: 10px; text-decoration: none; color: #333;">General Settings</a></li>
+        <li><a href="#notifications-settings" style="display: block; padding: 10px; background-color: #f1f1f1; border-radius: 6px; margin-bottom: 10px; text-decoration: none; color: #333;">Notifications</a></li>
+        <li><a href="#user-preferences" style="display: block; padding: 10px; background-color: #f1f1f1; border-radius: 6px; margin-bottom: 10px; text-decoration: none; color: #333;">User Preferences</a></li>
+        <li><a href="#security-settings" style="display: block; padding: 10px; background-color: #f1f1f1; border-radius: 6px; margin-bottom: 10px; text-decoration: none; color: #333;">Security Settings</a></li>
+      </ul>
+    </div>
+  
+    <!-- Settings Content -->
+    <div id="settings-content" style="float: left; width: 75%;">
+      <!-- General Settings -->
+      <div id="general-settings" class="settings-section">
+        <h4>General Settings</h4>
+        <form>
+          <label for="crm-name">CRM Name:</label>
+          <input type="text" id="crm-name" name="crm-name" placeholder="Enter CRM Name" style="width: 100%; padding: 10px; border-radius: 6px; margin-bottom: 15px; border: 1px solid #ddd;">
+          <label for="crm-url">CRM URL:</label>
+          <input type="text" id="crm-url" name="crm-url" placeholder="Enter CRM URL" style="width: 100%; padding: 10px; border-radius: 6px; margin-bottom: 15px; border: 1px solid #ddd;">
+        </form>
+      </div>
+  
+      <!-- Notifications Settings -->
+      <div id="notifications-settings" class="settings-section">
+        <h4>Notification Settings</h4>
+        <form>
+          <label for="email-notifications">Email Notifications:</label>
+          <select id="email-notifications" name="email-notifications" style="width: 100%; padding: 10px; border-radius: 6px; margin-bottom: 15px; border: 1px solid #ddd;">
+            <option value="enabled">Enabled</option>
+            <option value="disabled">Disabled</option>
+          </select>
+  
+          <label for="sms-notifications">SMS Notifications:</label>
+          <select id="sms-notifications" name="sms-notifications" style="width: 100%; padding: 10px; border-radius: 6px; margin-bottom: 15px; border: 1px solid #ddd;">
+            <option value="enabled">Enabled</option>
+            <option value="disabled">Disabled</option>
+          </select>
+        </form>
+      </div>
+  
+      <!-- User Preferences -->
+      <div id="user-preferences" class="settings-section">
+        <h4>User Preferences</h4>
+        <form>
+          <label for="language">Language:</label>
+          <select id="language" name="language" style="width: 100%; padding: 10px; border-radius: 6px; margin-bottom: 15px; border: 1px solid #ddd;">
+            <option value="english">English</option>
+            <option value="spanish">Spanish</option>
+            <option value="french">French</option>
+          </select>
+  
+          <label for="timezone">Timezone:</label>
+          <select id="timezone" name="timezone" style="width: 100%; padding: 10px; border-radius: 6px; margin-bottom: 15px; border: 1px solid #ddd;">
+            <option value="utc">UTC</option>
+            <option value="gmt">GMT</option>
+            <option value="pst">PST</option>
+          </select>
+        </form>
+      </div>
+  
+      <!-- Security Settings -->
+      <div id="security-settings" class="settings-section">
+        <h4>Security Settings</h4>
+        <form>
+          <label for="two-factor-auth">Enable Two-Factor Authentication:</label>
+          <select id="two-factor-auth" name="two-factor-auth" style="width: 100%; padding: 10px; border-radius: 6px; margin-bottom: 15px; border: 1px solid #ddd;">
+            <option value="enabled">Enabled</option>
+            <option value="disabled">Disabled</option>
+          </select>
+  
+          <label for="password-policy">Password Policy:</label>
+          <select id="password-policy" name="password-policy" style="width: 100%; padding: 10px; border-radius: 6px; margin-bottom: 15px; border: 1px solid #ddd;">
+            <option value="strong">Strong</option>
+            <option value="medium">Medium</option>
+            <option value="weak">Weak</option>
+          </select>
+        </form>
+      </div>
+  
+      <!-- Save Button -->
+      <div style="margin-top: 20px;">
+        <button style="padding: 10px 20px; background-color: #04AA6D; color: white; border: none; border-radius: 6px;">Save Changes</button>
+      </div>
+    </div>
   </div>
+  
 </div>
 
 <script>
