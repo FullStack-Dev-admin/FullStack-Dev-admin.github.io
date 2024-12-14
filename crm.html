@@ -261,73 +261,495 @@
 
   <!-- Other sections (Email/SMS, Lead Management, etc.) -->
 
-  <div id="email" class="content-section">
+<!-- Email Communication Section -->
+<div id="email" class="content-section">
     <h3>Email Communication</h3>
     <p><strong>Recent Emails Sent:</strong></p>
-    <ul>
-      <li>Email sent to <strong>John Doe</strong> regarding property 3-Bedroom Villa in Downtown</li>
-      <li>Email sent to <strong>Jane Smith</strong> regarding new 2-Bedroom property listing</li>
-    </ul>
+    
+    <!-- Table for Emails -->
+    <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+      <thead>
+        <tr style="background-color: #f4f4f4; text-align: left;">
+          <th style="padding: 12px; border: 1px solid #ddd;">Recipient</th>
+          <th style="padding: 12px; border: 1px solid #ddd;">Subject</th>
+          <th style="padding: 12px; border: 1px solid #ddd;">Date Sent</th>
+          <th style="padding: 12px; border: 1px solid #ddd;">Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding: 12px; border: 1px solid #ddd;">John Doe</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">Property Details: 3-Bedroom Villa</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">Dec 10, 2024</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">Sent</td>
+        </tr>
+        <tr>
+          <td style="padding: 12px; border: 1px solid #ddd;">Jane Smith</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">New Listing: 2-Bedroom Condo</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">Dec 9, 2024</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">Sent</td>
+        </tr>
+        <tr>
+          <td style="padding: 12px; border: 1px solid #ddd;">Alice Johnson</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">Offer on 1-Bedroom Apartment</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">Dec 8, 2024</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">Pending</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
-
+  
+  <!-- SMS Communication Section -->
   <div id="sms" class="content-section">
     <h3>SMS Communication</h3>
     <p><strong>Recent SMS Sent:</strong></p>
-    <ul>
-      <li>SMS sent to <strong>John Smith</strong> confirming appointment for property viewing</li>
-      <li>SMS sent to <strong>Sarah Johnson</strong> with lead status update</li>
-    </ul>
+    
+    <!-- Table for SMS -->
+    <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+      <thead>
+        <tr style="background-color: #f4f4f4; text-align: left;">
+          <th style="padding: 12px; border: 1px solid #ddd;">Recipient</th>
+          <th style="padding: 12px; border: 1px solid #ddd;">Message</th>
+          <th style="padding: 12px; border: 1px solid #ddd;">Date Sent</th>
+          <th style="padding: 12px; border: 1px solid #ddd;">Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding: 12px; border: 1px solid #ddd;">John Smith</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">Confirming appointment for 3-Bedroom Villa viewing</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">Dec 10, 2024</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">Sent</td>
+        </tr>
+        <tr>
+          <td style="padding: 12px; border: 1px solid #ddd;">Sarah Johnson</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">Lead status update: Interested in 2-Bedroom Condo</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">Dec 9, 2024</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">Sent</td>
+        </tr>
+        <tr>
+          <td style="padding: 12px; border: 1px solid #ddd;">Michael Brown</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">Appointment reminder for 1-Bedroom Apartment viewing</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">Dec 8, 2024</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">Pending</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
+  
 
-  <!-- Lead Management Section -->
-  <div id="view-leads" class="content-section">
+<!-- View Leads Section -->
+<div id="view-leads" class="content-section">
     <h3>View Leads</h3>
     <p>Here are some of your recent leads:</p>
-    <ul>
-      <li><strong>John Smith</strong> - Interested in 2-Bedroom Condo, Follow-up on 15th Dec</li>
-      <li><strong>Jane Doe</strong> - Looking for 1-Bedroom Apartment, Contacted on 10th Dec</li>
-      <li><strong>Peter Brown</strong> - Interested in 3-Bedroom Villa, Follow-up scheduled for 16th Dec</li>
-    </ul>
+    
+    <!-- Table for Leads -->
+    <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+      <thead>
+        <tr style="background-color: #f4f4f4; text-align: left;">
+          <th style="padding: 12px; border: 1px solid #ddd;">Lead Name</th>
+          <th style="padding: 12px; border: 1px solid #ddd;">Property Interest</th>
+          <th style="padding: 12px; border: 1px solid #ddd;">Contacted On</th>
+          <th style="padding: 12px; border: 1px solid #ddd;">Follow-up Date</th>
+          <th style="padding: 12px; border: 1px solid #ddd;">Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding: 12px; border: 1px solid #ddd;">John Smith</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">2-Bedroom Condo</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">Dec 10, 2024</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">Dec 15, 2024</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">Follow-up Pending</td>
+        </tr>
+        <tr>
+          <td style="padding: 12px; border: 1px solid #ddd;">Jane Doe</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">1-Bedroom Apartment</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">Dec 9, 2024</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">Dec 14, 2024</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">Contacted</td>
+        </tr>
+        <tr>
+          <td style="padding: 12px; border: 1px solid #ddd;">Peter Brown</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">3-Bedroom Villa</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">Dec 8, 2024</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">Dec 16, 2024</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">Follow-up Scheduled</td>
+        </tr>
+        <tr>
+          <td style="padding: 12px; border: 1px solid #ddd;">Alice Johnson</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">Luxury Villa</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">Dec 7, 2024</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">Dec 12, 2024</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">Interested</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
+  
 
-  <div id="add-leads" class="content-section">
-    <h3>Add Leads</h3>
-    <p>Add a new lead here:</p>
-    <form>
-      <input type="text" placeholder="Enter Lead Name"><br><br>
-      <input type="text" placeholder="Lead Phone"><br><br>
-      <button type="submit">Add Lead</button>
+<!-- Add Leads Section -->
+<div id="add-leads" class="content-section">
+    <h3>Add or Edit Leads</h3>
+    <p>Use the form below to add or edit lead details:</p>
+  
+    <!-- Form for Adding/Editing Leads -->
+    <form style="background-color: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+      <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+        <!-- Lead Name -->
+        <div style="flex: 1; min-width: 250px;">
+          <label for="lead-name" style="font-size: 16px; color: #333; font-weight: bold;">Lead Name</label><br>
+          <input type="text" id="lead-name" name="lead-name" placeholder="Enter Lead Name" style="width: 100%; padding: 12px; margin-top: 5px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px;" required>
+        </div>
+  
+        <!-- Property Interest -->
+        <div style="flex: 1; min-width: 250px;">
+          <label for="property-interest" style="font-size: 16px; color: #333; font-weight: bold;">Property Interest</label><br>
+          <input type="text" id="property-interest" name="property-interest" placeholder="Enter Property Interest" style="width: 100%; padding: 12px; margin-top: 5px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px;" required>
+        </div>
+      </div>
+  
+      <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 20px;">
+        <!-- Contacted On -->
+        <div style="flex: 1; min-width: 250px;">
+          <label for="contacted-on" style="font-size: 16px; color: #333; font-weight: bold;">Contacted On</label><br>
+          <input type="date" id="contacted-on" name="contacted-on" style="width: 100%; padding: 12px; margin-top: 5px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px;" required>
+        </div>
+  
+        <!-- Follow-up Date -->
+        <div style="flex: 1; min-width: 250px;">
+          <label for="follow-up-date" style="font-size: 16px; color: #333; font-weight: bold;">Follow-up Date</label><br>
+          <input type="date" id="follow-up-date" name="follow-up-date" style="width: 100%; padding: 12px; margin-top: 5px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px;" required>
+        </div>
+      </div>
+  
+      <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 20px;">
+        <!-- Lead Status -->
+        <div style="flex: 1; min-width: 250px;">
+          <label for="lead-status" style="font-size: 16px; color: #333; font-weight: bold;">Status</label><br>
+          <select id="lead-status" name="lead-status" style="width: 100%; padding: 12px; margin-top: 5px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px;">
+            <option value="Interested">Interested</option>
+            <option value="Contacted">Contacted</option>
+            <option value="Follow-up Pending">Follow-up Pending</option>
+            <option value="Follow-up Scheduled">Follow-up Scheduled</option>
+          </select>
+        </div>
+  
+        <!-- Lead Source -->
+        <div style="flex: 1; min-width: 250px;">
+          <label for="lead-source" style="font-size: 16px; color: #333; font-weight: bold;">Lead Source</label><br>
+          <select id="lead-source" name="lead-source" style="width: 100%; padding: 12px; margin-top: 5px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px;">
+            <option value="Website">Website</option>
+            <option value="Referral">Referral</option>
+            <option value="Social Media">Social Media</option>
+            <option value="Advertisement">Advertisement</option>
+          </select>
+        </div>
+      </div>
+  
+      <div style="margin-top: 30px; text-align: center;">
+        <button type="submit" style="background-color: #04AA6D; color: white; padding: 12px 30px; border: none; border-radius: 6px; font-size: 16px; cursor: pointer; transition: background-color 0.3s;">
+          Save Lead
+        </button>
+      </div>
     </form>
   </div>
+  
 
-  <div id="manage-leads" class="content-section">
-    <h3>Manage Leads</h3>
-    <p>Manage existing leads by updating statuses or assigning tasks.</p>
+<!-- Manage Leads Section -->
+<div id="manage-leads" class="content-section">
+  <h3>Manage Leads</h3>
+  <p>Below is the list of all leads. You can filter, edit, or delete leads as needed:</p>
+
+  <!-- Filter/Search Section -->
+  <div style="margin-bottom: 20px;">
+    <input type="text" id="search-lead" placeholder="Search by Lead Name..." style="padding: 10px; font-size: 14px; width: 250px; border: 1px solid #ddd; border-radius: 6px;" />
+    <select id="filter-status" style="padding: 10px; font-size: 14px; margin-left: 15px; border: 1px solid #ddd; border-radius: 6px;">
+      <option value="">Filter by Status</option>
+      <option value="Interested">Interested</option>
+      <option value="Contacted">Contacted</option>
+      <option value="Follow-up Pending">Follow-up Pending</option>
+      <option value="Follow-up Scheduled">Follow-up Scheduled</option>
+    </select>
+    <button onclick="filterLeads()" style="padding: 10px 20px; margin-left: 15px; background-color: #04AA6D; color: white; border: none; border-radius: 6px; cursor: pointer;">Apply Filters</button>
   </div>
+
+  <!-- Leads Table -->
+  <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
+    <thead>
+      <tr>
+        <th style="padding: 10px; background-color: #f4f4f4; text-align: left;">Lead Name</th>
+        <th style="padding: 10px; background-color: #f4f4f4; text-align: left;">Status</th>
+        <th style="padding: 10px; background-color: #f4f4f4; text-align: left;">Contacted On</th>
+        <th style="padding: 10px; background-color: #f4f4f4; text-align: left;">Follow-up Date</th>
+        <th style="padding: 10px; background-color: #f4f4f4; text-align: left;">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Sample Leads - You would populate this with data dynamically -->
+      <tr>
+        <td style="padding: 10px;">John Doe</td>
+        <td style="padding: 10px;">Interested</td>
+        <td style="padding: 10px;">2024-12-01</td>
+        <td style="padding: 10px;">2024-12-10</td>
+        <td style="padding: 10px;">
+          <button onclick="editLead('John Doe')" style="padding: 6px 12px; background-color: #04AA6D; color: white; border: none; border-radius: 6px; cursor: pointer; margin-right: 5px;">Edit</button>
+          <button onclick="deleteLead('John Doe')" style="padding: 6px 12px; background-color: #e74c3c; color: white; border: none; border-radius: 6px; cursor: pointer;">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <td style="padding: 10px;">Jane Smith</td>
+        <td style="padding: 10px;">Follow-up Pending</td>
+        <td style="padding: 10px;">2024-12-02</td>
+        <td style="padding: 10px;">2024-12-15</td>
+        <td style="padding: 10px;">
+          <button onclick="editLead('Jane Smith')" style="padding: 6px 12px; background-color: #04AA6D; color: white; border: none; border-radius: 6px; cursor: pointer; margin-right: 5px;">Edit</button>
+          <button onclick="deleteLead('Jane Smith')" style="padding: 6px 12px; background-color: #e74c3c; color: white; border: none; border-radius: 6px; cursor: pointer;">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Pagination (Optional) -->
+  <div style="text-align: center;">
+    <button style="padding: 8px 16px; background-color: #ddd; border: none; border-radius: 6px; margin: 5px; cursor: pointer;">Previous</button>
+    <button style="padding: 8px 16px; background-color: #ddd; border: none; border-radius: 6px; margin: 5px; cursor: pointer;">Next</button>
+  </div>
+</div>
+
+<!-- Edit Lead Modal -->
+<div id="edit-lead-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); justify-content: center; align-items: center;">
+  <div style="background-color: white; padding: 30px; border-radius: 8px; width: 400px;">
+    <h4>Edit Lead</h4>
+    <label for="edit-lead-name" style="font-size: 16px; color: #333;">Lead Name</label><br>
+    <input type="text" id="edit-lead-name" style="width: 100%; padding: 12px; margin-top: 5px; border: 1px solid #ddd; border-radius: 6px;"><br><br>
+    <label for="edit-lead-status" style="font-size: 16px; color: #333;">Status</label><br>
+    <select id="edit-lead-status" style="width: 100%; padding: 12px; margin-top: 5px; border: 1px solid #ddd; border-radius: 6px;">
+      <option value="Interested">Interested</option>
+      <option value="Contacted">Contacted</option>
+      <option value="Follow-up Pending">Follow-up Pending</option>
+      <option value="Follow-up Scheduled">Follow-up Scheduled</option>
+    </select><br><br>
+    <button onclick="saveLeadChanges()" style="padding: 12px 20px; background-color: #04AA6D; color: white; border: none; border-radius: 6px; cursor: pointer;">Save Changes</button>
+    <button onclick="closeModal()" style="padding: 12px 20px; background-color: #ccc; color: black; border: none; border-radius: 6px; cursor: pointer; margin-left: 10px;">Cancel</button>
+  </div>
+</div>
+
 
   <!-- Property Management Section -->
-  <div id="view-properties" class="content-section">
+<!-- View Properties Section -->
+<div id="view-properties" class="content-section">
     <h3>View Properties</h3>
-    <p>Here are the properties available:</p>
-    <ul>
-      <li><strong>3-Bedroom Villa in Downtown</strong> - $500,000</li>
-      <li><strong>2-Bedroom Condo in Uptown</strong> - $350,000</li>
-    </ul>
+    <p>Below is the list of available properties. You can search, filter, or edit the properties as needed:</p>
+  
+    <!-- Search/Filter Section -->
+    <div style="margin-bottom: 20px;">
+      <input type="text" id="search-property" placeholder="Search by Property Name..." style="padding: 10px; font-size: 14px; width: 250px; border: 1px solid #ddd; border-radius: 6px;" />
+      <select id="filter-property-type" style="padding: 10px; font-size: 14px; margin-left: 15px; border: 1px solid #ddd; border-radius: 6px;">
+        <option value="">Filter by Type</option>
+        <option value="Residential">Residential</option>
+        <option value="Commercial">Commercial</option>
+      </select>
+      <select id="filter-property-status" style="padding: 10px; font-size: 14px; margin-left: 15px; border: 1px solid #ddd; border-radius: 6px;">
+        <option value="">Filter by Status</option>
+        <option value="Available">Available</option>
+        <option value="Sold">Sold</option>
+      </select>
+      <button onclick="filterProperties()" style="padding: 10px 20px; margin-left: 15px; background-color: #04AA6D; color: white; border: none; border-radius: 6px; cursor: pointer;">Apply Filters</button>
+    </div>
+  
+    <!-- Properties Table -->
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
+      <thead>
+        <tr>
+          <th style="padding: 10px; background-color: #f4f4f4; text-align: left;">Property Name</th>
+          <th style="padding: 10px; background-color: #f4f4f4; text-align: left;">Type</th>
+          <th style="padding: 10px; background-color: #f4f4f4; text-align: left;">Location</th>
+          <th style="padding: 10px; background-color: #f4f4f4; text-align: left;">Price</th>
+          <th style="padding: 10px; background-color: #f4f4f4; text-align: left;">Status</th>
+          <th style="padding: 10px; background-color: #f4f4f4; text-align: left;">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Sample Properties - You would populate this with data dynamically -->
+        <tr>
+          <td style="padding: 10px;">Villa on Palm Street</td>
+          <td style="padding: 10px;">Residential</td>
+          <td style="padding: 10px;">Palm Street, Miami</td>
+          <td style="padding: 10px;">$2,000,000</td>
+          <td style="padding: 10px;">Available</td>
+          <td style="padding: 10px;">
+            <button onclick="editProperty('Villa on Palm Street')" style="padding: 6px 12px; background-color: #04AA6D; color: white; border: none; border-radius: 6px; cursor: pointer; margin-right: 5px;">Edit</button>
+            <button onclick="deleteProperty('Villa on Palm Street')" style="padding: 6px 12px; background-color: #e74c3c; color: white; border: none; border-radius: 6px; cursor: pointer;">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 10px;">Skyline Plaza</td>
+          <td style="padding: 10px;">Commercial</td>
+          <td style="padding: 10px;">Downtown, New York</td>
+          <td style="padding: 10px;">$5,000,000</td>
+          <td style="padding: 10px;">Sold</td>
+          <td style="padding: 10px;">
+            <button onclick="editProperty('Skyline Plaza')" style="padding: 6px 12px; background-color: #04AA6D; color: white; border: none; border-radius: 6px; cursor: pointer; margin-right: 5px;">Edit</button>
+            <button onclick="deleteProperty('Skyline Plaza')" style="padding: 6px 12px; background-color: #e74c3c; color: white; border: none; border-radius: 6px; cursor: pointer;">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <!-- Pagination (Optional) -->
+    <div style="text-align: center;">
+      <button style="padding: 8px 16px; background-color: #ddd; border: none; border-radius: 6px; margin: 5px; cursor: pointer;">Previous</button>
+      <button style="padding: 8px 16px; background-color: #ddd; border: none; border-radius: 6px; margin: 5px; cursor: pointer;">Next</button>
+    </div>
   </div>
-
-  <div id="add-properties" class="content-section">
+  
+  <!-- Edit Property Modal -->
+  <div id="edit-property-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); justify-content: center; align-items: center;">
+    <div style="background-color: white; padding: 30px; border-radius: 8px; width: 400px;">
+      <h4>Edit Property</h4>
+      <label for="edit-property-name" style="font-size: 16px; color: #333;">Property Name</label><br>
+      <input type="text" id="edit-property-name" style="width: 100%; padding: 12px; margin-top: 5px; border: 1px solid #ddd; border-radius: 6px;"><br><br>
+      <label for="edit-property-type" style="font-size: 16px; color: #333;">Type</label><br>
+      <select id="edit-property-type" style="width: 100%; padding: 12px; margin-top: 5px; border: 1px solid #ddd; border-radius: 6px;">
+        <option value="Residential">Residential</option>
+        <option value="Commercial">Commercial</option>
+      </select><br><br>
+      <label for="edit-property-price" style="font-size: 16px; color: #333;">Price</label><br>
+      <input type="text" id="edit-property-price" style="width: 100%; padding: 12px; margin-top: 5px; border: 1px solid #ddd; border-radius: 6px;"><br><br>
+      <label for="edit-property-status" style="font-size: 16px; color: #333;">Status</label><br>
+      <select id="edit-property-status" style="width: 100%; padding: 12px; margin-top: 5px; border: 1px solid #ddd; border-radius: 6px;">
+        <option value="Available">Available</option>
+        <option value="Sold">Sold</option>
+      </select><br><br>
+      <button onclick="savePropertyChanges()" style="padding: 12px 20px; background-color: #04AA6D; color: white; border: none; border-radius: 6px; cursor: pointer;">Save Changes</button>
+      <button onclick="closeModal()" style="padding: 12px 20px; background-color: #ccc; color: black; border: none; border-radius: 6px; cursor: pointer; margin-left: 10px;">Cancel</button>
+    </div>
+  </div>
+  
+<!-- Add Property Section -->
+<div id="add-properties" class="content-section">
     <h3>Add Property</h3>
-    <form>
-      <input type="text" placeholder="Property Name"><br><br>
-      <input type="text" placeholder="Property Price"><br><br>
-      <button type="submit">Add Property</button>
+    <p>Please fill out the form below to add a new property:</p>
+  
+    <!-- Add Property Form -->
+    <form id="add-property-form" action="#" method="POST" enctype="multipart/form-data">
+      <div style="margin-bottom: 15px;">
+        <label for="property-name" style="font-size: 16px; color: #333;">Property Name</label><br>
+        <input type="text" id="property-name" name="property-name" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px;">
+      </div>
+  
+      <div style="margin-bottom: 15px;">
+        <label for="property-type" style="font-size: 16px; color: #333;">Type</label><br>
+        <select id="property-type" name="property-type" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px;">
+          <option value="Residential">Residential</option>
+          <option value="Commercial">Commercial</option>
+        </select>
+      </div>
+  
+      <div style="margin-bottom: 15px;">
+        <label for="property-price" style="font-size: 16px; color: #333;">Price</label><br>
+        <input type="number" id="property-price" name="property-price" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px;">
+      </div>
+  
+      <div style="margin-bottom: 15px;">
+        <label for="property-location" style="font-size: 16px; color: #333;">Location</label><br>
+        <input type="text" id="property-location" name="property-location" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px;">
+      </div>
+  
+      <div style="margin-bottom: 15px;">
+        <label for="property-description" style="font-size: 16px; color: #333;">Description</label><br>
+        <textarea id="property-description" name="property-description" rows="4" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px;"></textarea>
+      </div>
+  
+      <div style="margin-bottom: 15px;">
+        <label for="property-status" style="font-size: 16px; color: #333;">Status</label><br>
+        <select id="property-status" name="property-status" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px;">
+          <option value="Available">Available</option>
+          <option value="Sold">Sold</option>
+        </select>
+      </div>
+  
+      <div style="margin-bottom: 15px;">
+        <label for="property-images" style="font-size: 16px; color: #333;">Property Images</label><br>
+        <input type="file" id="property-images" name="property-images" accept="image/*" multiple style="padding: 10px; border: 1px solid #ddd; border-radius: 6px;">
+        <p style="font-size: 14px; color: #888;">You can upload multiple images. (e.g., floor plans, exterior shots)</p>
+      </div>
+  
+      <div style="margin-bottom: 20px;">
+        <button type="submit" style="padding: 12px 20px; background-color: #04AA6D; color: white; border: none; border-radius: 6px; cursor: pointer;">Add Property</button>
+      </div>
     </form>
   </div>
-
-  <div id="manage-properties" class="content-section">
-    <h3>Manage Properties</h3>
-    <p>Manage existing properties by updating details or changing status.</p>
+  
+  <!-- Success/Error Message (Hidden initially) -->
+  <div id="form-message" style="display: none; text-align: center; font-size: 16px; color: green;">
+    <p>Property added successfully!</p>
   </div>
+  <div id="form-error-message" style="display: none; text-align: center; font-size: 16px; color: red;">
+    <p>Error occurred while adding the property. Please try again.</p>
+  </div>
+  
+
+<!-- Manage Properties Section -->
+<div id="manage-properties" class="content-section">
+    <h3>Manage Properties</h3>
+    <p>Manage all your properties. You can view, edit, or delete any property from the list below:</p>
+    
+    <!-- Search/Filter Section -->
+    <div style="margin-bottom: 20px;">
+      <input type="text" id="search-property" placeholder="Search by name, type, or location" style="padding: 10px; width: 250px; border-radius: 6px; border: 1px solid #ddd;">
+      <button id="filter-button" style="padding: 10px 20px; background-color: #04AA6D; color: white; border: none; border-radius: 6px;">Filter</button>
+    </div>
+  
+    <!-- Properties Table -->
+    <table id="properties-table" style="width: 100%; border-collapse: collapse;">
+      <thead>
+        <tr style="background-color: #f4f4f4;">
+          <th style="padding: 10px; text-align: left;">Property Name</th>
+          <th style="padding: 10px; text-align: left;">Type</th>
+          <th style="padding: 10px; text-align: left;">Price</th>
+          <th style="padding: 10px; text-align: left;">Location</th>
+          <th style="padding: 10px; text-align: left;">Status</th>
+          <th style="padding: 10px; text-align: center;">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Property List (Rows will be dynamically generated) -->
+        <tr>
+          <td style="padding: 10px;">Example Property 1</td>
+          <td style="padding: 10px;">Residential</td>
+          <td style="padding: 10px;">$500,000</td>
+          <td style="padding: 10px;">New York</td>
+          <td style="padding: 10px;">Available</td>
+          <td style="padding: 10px; text-align: center;">
+            <button class="edit-button" style="padding: 6px 12px; background-color: #ffc107; color: white; border: none; border-radius: 6px;">Edit</button>
+            <button class="delete-button" style="padding: 6px 12px; background-color: #dc3545; color: white; border: none; border-radius: 6px;">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 10px;">Example Property 2</td>
+          <td style="padding: 10px;">Commercial</td>
+          <td style="padding: 10px;">$1,200,000</td>
+          <td style="padding: 10px;">Los Angeles</td>
+          <td style="padding: 10px;">Sold</td>
+          <td style="padding: 10px; text-align: center;">
+            <button class="edit-button" style="padding: 6px 12px; background-color: #ffc107; color: white; border: none; border-radius: 6px;">Edit</button>
+            <button class="delete-button" style="padding: 6px 12px; background-color: #dc3545; color: white; border: none; border-radius: 6px;">Delete</button>
+          </td>
+        </tr>
+        <!-- More rows will follow -->
+      </tbody>
+    </table>
+  
+    <!-- Pagination Section -->
+    <div style="margin-top: 20px; text-align: center;">
+      <button class="pagination-button" style="padding: 10px 20px; background-color: #f1f1f1; color: #333; border: 1px solid #ddd; border-radius: 6px;">Previous</button>
+      <span style="padding: 10px 15px;">Page 1 of 5</span>
+      <button class="pagination-button" style="padding: 10px 20px; background-color: #f1f1f1; color: #333; border: 1px solid #ddd; border-radius: 6px;">Next</button>
+    </div>
+  </div>
+  
 
   <!-- Reporting Analytics Section -->
   <div id="sales-report" class="content-section">
