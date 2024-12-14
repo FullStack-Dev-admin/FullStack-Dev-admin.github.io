@@ -752,34 +752,516 @@
   
 
   <!-- Reporting Analytics Section -->
-  <div id="sales-report" class="content-section">
+<!-- Sales Report Page -->
+<div id="sales-report" class="content-section">
     <h3>Sales Report</h3>
-    <p>View detailed sales reports here:</p>
+    <p>View detailed insights into your sales performance over time:</p>
+  
+    <!-- Filters Section -->
+    <div id="report-filters" style="margin-bottom: 20px;">
+      <label for="date-range">Date Range:</label>
+      <input type="date" id="start-date" name="start-date">
+      <input type="date" id="end-date" name="end-date">
+      <button style="padding: 10px 15px; margin-left: 10px; background-color: #04AA6D; color: white; border: none; border-radius: 6px;">Apply Filters</button>
+    </div>
+  
+    <!-- Sales Overview -->
+    <div class="sales-overview" style="display: flex; justify-content: space-between; margin-bottom: 30px;">
+      <div class="total-sales" style="width: 30%; background-color: #f1f1f1; padding: 20px; border-radius: 6px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+        <h4>Total Sales</h4>
+        <p style="font-size: 24px; font-weight: bold;">$1,250,000</p>
+      </div>
+      <div class="sales-this-month" style="width: 30%; background-color: #f1f1f1; padding: 20px; border-radius: 6px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+        <h4>Sales This Month</h4>
+        <p style="font-size: 24px; font-weight: bold;">$150,000</p>
+      </div>
+      <div class="average-sales" style="width: 30%; background-color: #f1f1f1; padding: 20px; border-radius: 6px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+        <h4>Average Sale Value</h4>
+        <p style="font-size: 24px; font-weight: bold;">$500</p>
+      </div>
+    </div>
+  
+    <!-- Sales Trend Chart (Example) -->
+    <div class="sales-trend" style="margin-bottom: 30px;">
+      <h4>Sales Trend (Monthly)</h4>
+      <div id="sales-chart" style="width: 100%; height: 300px; background-color: #f9f9f9; border-radius: 6px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+        <!-- Chart will go here (e.g., using Chart.js or a similar library) -->
+        <!-- This is just a placeholder -->
+        <p style="text-align: center; padding-top: 130px; color: #ccc;">Sales Trend Graph</p>
+      </div>
+    </div>
+  
+    <!-- Sales Breakdown Table -->
+    <div class="sales-breakdown" style="margin-bottom: 30px;">
+      <h4>Sales Breakdown</h4>
+      <table style="width: 100%; border-collapse: collapse; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 6px; overflow: hidden;">
+        <thead style="background-color: #04AA6D; color: white;">
+          <tr>
+            <th style="padding: 10px; text-align: left;">Product</th>
+            <th style="padding: 10px; text-align: left;">Units Sold</th>
+            <th style="padding: 10px; text-align: left;">Revenue</th>
+            <th style="padding: 10px; text-align: left;">Region</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding: 10px;">Product A</td>
+            <td style="padding: 10px;">300</td>
+            <td style="padding: 10px;">$100,000</td>
+            <td style="padding: 10px;">North America</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px;">Product B</td>
+            <td style="padding: 10px;">150</td>
+            <td style="padding: 10px;">$75,000</td>
+            <td style="padding: 10px;">Europe</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px;">Product C</td>
+            <td style="padding: 10px;">250</td>
+            <td style="padding: 10px;">$50,000</td>
+            <td style="padding: 10px;">Asia</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+    <!-- Top Sales Representatives -->
+    <div class="top-sales-representatives">
+      <h4>Top Sales Representatives</h4>
+      <table style="width: 100%; border-collapse: collapse; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 6px; overflow: hidden;">
+        <thead style="background-color: #04AA6D; color: white;">
+          <tr>
+            <th style="padding: 10px; text-align: left;">Rep Name</th>
+            <th style="padding: 10px; text-align: left;">Total Sales</th>
+            <th style="padding: 10px; text-align: left;">Revenue</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding: 10px;">John Doe</td>
+            <td style="padding: 10px;">$300,000</td>
+            <td style="padding: 10px;">$100,000</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px;">Jane Smith</td>
+            <td style="padding: 10px;">$250,000</td>
+            <td style="padding: 10px;">$90,000</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px;">Michael Brown</td>
+            <td style="padding: 10px;">$200,000</td>
+            <td style="padding: 10px;">$75,000</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+    <!-- Export Button -->
+    <div style="margin-top: 20px;">
+      <button style="padding: 10px 20px; background-color: #04AA6D; color: white; border: none; border-radius: 6px;">Export to CSV</button>
+    </div>
   </div>
+  
 
-  <div id="lead-report" class="content-section">
+<!-- Lead Report Page -->
+<div id="lead-report" class="content-section">
     <h3>Lead Report</h3>
-    <p>View detailed lead reports here:</p>
+    <p>View detailed insights into your lead generation and performance over time:</p>
+  
+    <!-- Filters Section -->
+    <div id="report-filters" style="margin-bottom: 20px;">
+      <label for="date-range">Date Range:</label>
+      <input type="date" id="start-date" name="start-date">
+      <input type="date" id="end-date" name="end-date">
+      <button style="padding: 10px 15px; margin-left: 10px; background-color: #04AA6D; color: white; border: none; border-radius: 6px;">Apply Filters</button>
+    </div>
+  
+    <!-- Lead Overview -->
+    <div class="lead-overview" style="display: flex; justify-content: space-between; margin-bottom: 30px;">
+      <div class="total-leads" style="width: 30%; background-color: #f1f1f1; padding: 20px; border-radius: 6px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+        <h4>Total Leads</h4>
+        <p style="font-size: 24px; font-weight: bold;">1,250</p>
+      </div>
+      <div class="leads-this-month" style="width: 30%; background-color: #f1f1f1; padding: 20px; border-radius: 6px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+        <h4>Leads This Month</h4>
+        <p style="font-size: 24px; font-weight: bold;">150</p>
+      </div>
+      <div class="conversion-rate" style="width: 30%; background-color: #f1f1f1; padding: 20px; border-radius: 6px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+        <h4>Conversion Rate</h4>
+        <p style="font-size: 24px; font-weight: bold;">12%</p>
+      </div>
+    </div>
+  
+    <!-- Lead Trend Chart (Example) -->
+    <div class="lead-trend" style="margin-bottom: 30px;">
+      <h4>Lead Trend (Monthly)</h4>
+      <div id="lead-chart" style="width: 100%; height: 300px; background-color: #f9f9f9; border-radius: 6px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+        <!-- Chart will go here (e.g., using Chart.js or a similar library) -->
+        <!-- This is just a placeholder -->
+        <p style="text-align: center; padding-top: 130px; color: #ccc;">Lead Trend Graph</p>
+      </div>
+    </div>
+  
+    <!-- Lead Breakdown Table -->
+    <div class="lead-breakdown" style="margin-bottom: 30px;">
+      <h4>Lead Breakdown</h4>
+      <table style="width: 100%; border-collapse: collapse; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 6px; overflow: hidden;">
+        <thead style="background-color: #04AA6D; color: white;">
+          <tr>
+            <th style="padding: 10px; text-align: left;">Lead Source</th>
+            <th style="padding: 10px; text-align: left;">Leads Generated</th>
+            <th style="padding: 10px; text-align: left;">Conversion Rate</th>
+            <th style="padding: 10px; text-align: left;">Region</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding: 10px;">Facebook Ads</td>
+            <td style="padding: 10px;">500</td>
+            <td style="padding: 10px;">15%</td>
+            <td style="padding: 10px;">North America</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px;">Google Ads</td>
+            <td style="padding: 10px;">400</td>
+            <td style="padding: 10px;">10%</td>
+            <td style="padding: 10px;">Europe</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px;">Referral</td>
+            <td style="padding: 10px;">350</td>
+            <td style="padding: 10px;">20%</td>
+            <td style="padding: 10px;">Asia</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+    <!-- Top Lead Sources -->
+    <div class="top-lead-sources">
+      <h4>Top Lead Sources</h4>
+      <table style="width: 100%; border-collapse: collapse; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 6px; overflow: hidden;">
+        <thead style="background-color: #04AA6D; color: white;">
+          <tr>
+            <th style="padding: 10px; text-align: left;">Source</th>
+            <th style="padding: 10px; text-align: left;">Leads Generated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding: 10px;">Facebook Ads</td>
+            <td style="padding: 10px;">500</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px;">Google Ads</td>
+            <td style="padding: 10px;">400</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px;">Referral</td>
+            <td style="padding: 10px;">350</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+    <!-- Lead Status Overview -->
+    <div class="lead-status-overview">
+      <h4>Lead Status Overview</h4>
+      <table style="width: 100%; border-collapse: collapse; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 6px; overflow: hidden;">
+        <thead style="background-color: #04AA6D; color: white;">
+          <tr>
+            <th style="padding: 10px; text-align: left;">Lead Status</th>
+            <th style="padding: 10px; text-align: left;">Leads</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding: 10px;">New</td>
+            <td style="padding: 10px;">600</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px;">Contacted</td>
+            <td style="padding: 10px;">400</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px;">Converted</td>
+            <td style="padding: 10px;">250</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+    <!-- Export Button -->
+    <div style="margin-top: 20px;">
+      <button style="padding: 10px 20px; background-color: #04AA6D; color: white; border: none; border-radius: 6px;">Export to CSV</button>
+    </div>
   </div>
+  
 
-  <div id="performance-report" class="content-section">
+<!-- Performance Report Page -->
+<div id="performance-report" class="content-section">
     <h3>Performance Report</h3>
-    <p>View performance analytics here:</p>
+    <p>Review the performance of your team, business, or sales efforts over time with insights and detailed metrics.</p>
+  
+    <!-- Filters Section -->
+    <div id="report-filters" style="margin-bottom: 20px;">
+      <label for="date-range">Date Range:</label>
+      <input type="date" id="start-date" name="start-date">
+      <input type="date" id="end-date" name="end-date">
+      <button style="padding: 10px 15px; margin-left: 10px; background-color: #04AA6D; color: white; border: none; border-radius: 6px;">Apply Filters</button>
+    </div>
+  
+    <!-- Performance Overview -->
+    <div class="performance-overview" style="display: flex; justify-content: space-between; margin-bottom: 30px;">
+      <div class="total-tasks" style="width: 30%; background-color: #f1f1f1; padding: 20px; border-radius: 6px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+        <h4>Total Tasks</h4>
+        <p style="font-size: 24px; font-weight: bold;">1,500</p>
+      </div>
+      <div class="tasks-completed" style="width: 30%; background-color: #f1f1f1; padding: 20px; border-radius: 6px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+        <h4>Tasks Completed</h4>
+        <p style="font-size: 24px; font-weight: bold;">1,200</p>
+      </div>
+      <div class="performance-rate" style="width: 30%; background-color: #f1f1f1; padding: 20px; border-radius: 6px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+        <h4>Performance Rate</h4>
+        <p style="font-size: 24px; font-weight: bold;">80%</p>
+      </div>
+    </div>
+  
+    <!-- Performance Trend Chart -->
+    <div class="performance-trend" style="margin-bottom: 30px;">
+      <h4>Performance Trend (Monthly)</h4>
+      <div id="performance-chart" style="width: 100%; height: 300px; background-color: #f9f9f9; border-radius: 6px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+        <!-- Chart will go here (e.g., using Chart.js or a similar library) -->
+        <!-- This is just a placeholder -->
+        <p style="text-align: center; padding-top: 130px; color: #ccc;">Performance Trend Graph</p>
+      </div>
+    </div>
+  
+    <!-- Performance Breakdown Table -->
+    <div class="performance-breakdown" style="margin-bottom: 30px;">
+      <h4>Performance Breakdown</h4>
+      <table style="width: 100%; border-collapse: collapse; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 6px; overflow: hidden;">
+        <thead style="background-color: #04AA6D; color: white;">
+          <tr>
+            <th style="padding: 10px; text-align: left;">Employee</th>
+            <th style="padding: 10px; text-align: left;">Tasks Completed</th>
+            <th style="padding: 10px; text-align: left;">Performance Rate</th>
+            <th style="padding: 10px; text-align: left;">Team</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding: 10px;">John Doe</td>
+            <td style="padding: 10px;">350</td>
+            <td style="padding: 10px;">85%</td>
+            <td style="padding: 10px;">Sales Team</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px;">Jane Smith</td>
+            <td style="padding: 10px;">300</td>
+            <td style="padding: 10px;">75%</td>
+            <td style="padding: 10px;">Marketing Team</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px;">Alice Johnson</td>
+            <td style="padding: 10px;">550</td>
+            <td style="padding: 10px;">90%</td>
+            <td style="padding: 10px;">Tech Team</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+    <!-- Top Performing Teams -->
+    <div class="top-performing-teams">
+      <h4>Top Performing Teams</h4>
+      <table style="width: 100%; border-collapse: collapse; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 6px; overflow: hidden;">
+        <thead style="background-color: #04AA6D; color: white;">
+          <tr>
+            <th style="padding: 10px; text-align: left;">Team</th>
+            <th style="padding: 10px; text-align: left;">Total Tasks Completed</th>
+            <th style="padding: 10px; text-align: left;">Performance Rate</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding: 10px;">Sales Team</td>
+            <td style="padding: 10px;">1,200</td>
+            <td style="padding: 10px;">80%</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px;">Marketing Team</td>
+            <td style="padding: 10px;">1,000</td>
+            <td style="padding: 10px;">70%</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px;">Tech Team</td>
+            <td style="padding: 10px;">1,500</td>
+            <td style="padding: 10px;">90%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+    <!-- Actionable Insights -->
+    <div class="actionable-insights" style="margin-top: 30px;">
+      <h4>Actionable Insights</h4>
+      <ul>
+        <li><strong>Sales Team:</strong> Increase focus on follow-ups to improve conversion rate.</li>
+        <li><strong>Marketing Team:</strong> Evaluate current strategies for lead generation to improve completion rates.</li>
+        <li><strong>Tech Team:</strong> Continue with the current strategies; high success rate in task completion.</li>
+      </ul>
+    </div>
+  
+    <!-- Export Button -->
+    <div style="margin-top: 20px;">
+      <button style="padding: 10px 20px; background-color: #04AA6D; color: white; border: none; border-radius: 6px;">Export to CSV</button>
+    </div>
   </div>
+  
 
-  <!-- Transaction Management Section -->
-  <div id="transaction-history" class="content-section">
+<!-- Transaction History Page -->
+<div id="transaction-history" class="content-section">
     <h3>Transaction History</h3>
-    <p>View all completed transactions:</p>
+    <p>Review all of your transaction records, filter by date range, type, and status, and analyze transaction trends.</p>
+  
+    <!-- Filters Section -->
+    <div id="transaction-filters" style="margin-bottom: 20px;">
+      <label for="transaction-type">Transaction Type:</label>
+      <select id="transaction-type" name="transaction-type" style="padding: 8px 12px; margin-right: 20px;">
+        <option value="all">All</option>
+        <option value="credit">Credit</option>
+        <option value="debit">Debit</option>
+      </select>
+  
+      <label for="date-range">Date Range:</label>
+      <input type="date" id="start-date" name="start-date">
+      <input type="date" id="end-date" name="end-date">
+      <button style="padding: 10px 15px; margin-left: 10px; background-color: #04AA6D; color: white; border: none; border-radius: 6px;">Apply Filters</button>
+    </div>
+  
+    <!-- Transaction Overview -->
+    <div class="transaction-overview" style="display: flex; justify-content: space-between; margin-bottom: 30px;">
+      <div class="total-transactions" style="width: 30%; background-color: #f1f1f1; padding: 20px; border-radius: 6px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+        <h4>Total Transactions</h4>
+        <p style="font-size: 24px; font-weight: bold;">2,300</p>
+      </div>
+      <div class="total-credit" style="width: 30%; background-color: #f1f1f1; padding: 20px; border-radius: 6px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+        <h4>Total Credit</h4>
+        <p style="font-size: 24px; font-weight: bold;">$45,000</p>
+      </div>
+      <div class="total-debit" style="width: 30%; background-color: #f1f1f1; padding: 20px; border-radius: 6px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+        <h4>Total Debit</h4>
+        <p style="font-size: 24px; font-weight: bold;">$30,000</p>
+      </div>
+    </div>
+  
+    <!-- Transaction Trends Chart -->
+    <div class="transaction-trends" style="margin-bottom: 30px;">
+      <h4>Transaction Trends (Monthly)</h4>
+      <div id="transaction-chart" style="width: 100%; height: 300px; background-color: #f9f9f9; border-radius: 6px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+        <!-- Chart will go here (e.g., using Chart.js or a similar library) -->
+        <!-- This is just a placeholder -->
+        <p style="text-align: center; padding-top: 130px; color: #ccc;">Transaction Trend Graph</p>
+      </div>
+    </div>
+  
+    <!-- Transaction History Table -->
+    <div class="transaction-table">
+      <h4>Transaction History</h4>
+      <table style="width: 100%; border-collapse: collapse; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 6px; overflow: hidden;">
+        <thead style="background-color: #04AA6D; color: white;">
+          <tr>
+            <th style="padding: 10px; text-align: left;">Transaction ID</th>
+            <th style="padding: 10px; text-align: left;">Date</th>
+            <th style="padding: 10px; text-align: left;">Type</th>
+            <th style="padding: 10px; text-align: left;">Amount</th>
+            <th style="padding: 10px; text-align: left;">Status</th>
+            <th style="padding: 10px; text-align: left;">Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding: 10px;">#00123</td>
+            <td style="padding: 10px;">2024-12-01</td>
+            <td style="padding: 10px;">Credit</td>
+            <td style="padding: 10px;">$2,000</td>
+            <td style="padding: 10px;">Completed</td>
+            <td style="padding: 10px;">Invoice Payment</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px;">#00124</td>
+            <td style="padding: 10px;">2024-12-05</td>
+            <td style="padding: 10px;">Debit</td>
+            <td style="padding: 10px;">$1,500</td>
+            <td style="padding: 10px;">Completed</td>
+            <td style="padding: 10px;">Purchase Supplies</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px;">#00125</td>
+            <td style="padding: 10px;">2024-12-10</td>
+            <td style="padding: 10px;">Credit</td>
+            <td style="padding: 10px;">$5,000</td>
+            <td style="padding: 10px;">Pending</td>
+            <td style="padding: 10px;">Client Payment</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+    <!-- Export Button -->
+    <div style="margin-top: 20px;">
+      <button style="padding: 10px 20px; background-color: #04AA6D; color: white; border: none; border-radius: 6px;">Export to CSV</button>
+    </div>
   </div>
+  
 
-  <div id="add-transaction" class="content-section">
+<!-- Add Transaction Page -->
+<div id="add-transaction" class="content-section">
     <h3>Add Transaction</h3>
-    <form>
-      <input type="text" placeholder="Transaction Details"><br><br>
-      <button type="submit">Add Transaction</button>
+    <p>Fill in the details to add a new transaction record.</p>
+  
+    <!-- Transaction Form -->
+    <form action="" method="POST">
+      <div class="form-group" style="margin-bottom: 20px;">
+        <label for="transaction-type" style="font-size: 16px; font-weight: bold;">Transaction Type:</label>
+        <select id="transaction-type" name="transaction-type" style="padding: 10px 12px; width: 100%; border-radius: 5px; border: 1px solid #ddd;">
+          <option value="credit">Credit</option>
+          <option value="debit">Debit</option>
+        </select>
+      </div>
+  
+      <div class="form-group" style="margin-bottom: 20px;">
+        <label for="amount" style="font-size: 16px; font-weight: bold;">Amount:</label>
+        <input type="number" id="amount" name="amount" required placeholder="Enter amount" style="padding: 10px 12px; width: 100%; border-radius: 5px; border: 1px solid #ddd;" />
+      </div>
+  
+      <div class="form-group" style="margin-bottom: 20px;">
+        <label for="transaction-date" style="font-size: 16px; font-weight: bold;">Transaction Date:</label>
+        <input type="date" id="transaction-date" name="transaction-date" required style="padding: 10px 12px; width: 100%; border-radius: 5px; border: 1px solid #ddd;" />
+      </div>
+  
+      <div class="form-group" style="margin-bottom: 20px;">
+        <label for="status" style="font-size: 16px; font-weight: bold;">Status:</label>
+        <select id="status" name="status" style="padding: 10px 12px; width: 100%; border-radius: 5px; border: 1px solid #ddd;">
+          <option value="pending">Pending</option>
+          <option value="completed">Completed</option>
+        </select>
+      </div>
+  
+      <div class="form-group" style="margin-bottom: 20px;">
+        <label for="notes" style="font-size: 16px; font-weight: bold;">Notes:</label>
+        <textarea id="notes" name="notes" rows="4" placeholder="Additional details" style="padding: 10px 12px; width: 100%; border-radius: 5px; border: 1px solid #ddd;"></textarea>
+      </div>
+  
+      <div style="display: flex; justify-content: space-between;">
+        <button type="submit" style="padding: 10px 20px; background-color: #04AA6D; color: white; border: none; border-radius: 5px; cursor: pointer;">Submit Transaction</button>
+        <button type="button" onclick="window.location.href='transaction-history.html'" style="padding: 10px 20px; background-color: #f44336; color: white; border: none; border-radius: 5px; cursor: pointer;">Cancel</button>
+      </div>
     </form>
   </div>
+  
 
 <!-- CRM Settings Page -->
 <div id="crm-settings" class="content-section">
