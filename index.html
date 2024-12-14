@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body {margin:0;font-family:Arial}
+/* Your existing styles */
+body {
+  margin: 0;
+  font-family: Arial;
+}
 
 .topnav {
   overflow: hidden;
@@ -78,6 +82,17 @@ body {margin:0;font-family:Arial}
   display: block;
 }
 
+/* Special styling for CRM and Join Team */
+.topnav a.crm-link {
+  background-color: #04AA6D;
+  font-weight: bold;
+}
+
+.topnav a.join-team {
+  background-color: #FF5733;
+  font-weight: bold;
+}
+
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
@@ -112,13 +127,22 @@ body {margin:0;font-family:Arial}
 </head>
 <body>
 
+<!-- Top Navigation Bar -->
 <div class="topnav" id="myTopnav">
+  <!-- Home Link -->
+  <a href="index.html" class="home-link">SENW Realty</a> <!-- Added link to go back to Home -->
+  
   <div class="dropdown">
     <button class="dropbtn">Buy 
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
       <a href="#residential">Residential</a>
+      <a href="#commercial">Commercial</a>
+      <a href="#first-time-home">First Time Home Buyer</a>
+      <a href="#new-construction">New Construction</a>
+      <a href="#luxury-properties">Luxury Properties</a>
+      <a href="#find-your-agent">Find Your Agent</a>
     </div>
   </div>
   <div class="dropdown">
@@ -127,6 +151,8 @@ body {margin:0;font-family:Arial}
     </button>
     <div class="dropdown-content">
       <a href="#home-evaluation">Home Evaluation</a>
+      <a href="#prepare-your-home">Prepare Your Home</a>
+      <a href="#find-your-agent">Find Your Agent</a>
     </div>
   </div>
   <div class="dropdown">
@@ -135,6 +161,8 @@ body {margin:0;font-family:Arial}
     </button>
     <div class="dropdown-content">
       <a href="#lease-application">Lease Application</a>
+      <a href="#apartment-search">Apartment Home Search</a>
+      <a href="#find-your-agent">Find Your Agent</a>
     </div>
   </div>
   <div class="dropdown">
@@ -143,29 +171,41 @@ body {margin:0;font-family:Arial}
     </button>
     <div class="dropdown-content">
       <a href="#commercial-buy">Buy</a>
+      <a href="#commercial-sell">Sell</a>
+      <a href="#commercial-lease">Lease</a>
+      <a href="#find-your-agent">Find Your Agent</a>
     </div>
   </div>
+  
+  <!-- CRM Menu Link with sub-menu -->
+  <a href="crm.html">CRM</a>
   <a href="#forum">Forum</a>
   <a href="#contact">Contact Us</a>
-  <div class="dropdown">
-    <button class="dropbtn">CRM 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="#dashboard">Dashboard</a>
-    </div>
-  </div>
-  <a href="#join">Join the Team</a>
+  <a href="#join" class="join-team">Join the Team</a> <!-- Highlight Join the Team Link -->
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
 
+<!-- Main Content -->
 <div style="padding-left:16px">
-  <h2>SENW Realty</h2>
-  <p>Resize the browser window to see how it works.</p>
-  <p>Hover over the dropdown button to open the dropdown menu.</p>
+  <h2>SENW Realty</h2> <!-- This is the name of your website -->
+  <p>Welcome to SENW Realty, your trusted partner in real estate.</p>
+  <p>Explore our offerings and let us help you find your perfect property!</p>
 </div>
 
 <script>
+// Add active class to clicked link
+function setActiveClass(event) {
+  var links = document.querySelectorAll('.topnav a');
+  links.forEach(function(link) {
+    link.classList.remove('active');
+  });
+  event.target.classList.add('active');
+}
+
+document.querySelectorAll('.topnav a').forEach(function(link) {
+  link.addEventListener('click', setActiveClass);
+});
+
 function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
