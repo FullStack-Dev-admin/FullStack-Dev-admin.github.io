@@ -25,7 +25,7 @@
     .sidenav a, .dropdown-btn {
       padding: 6px 8px 6px 16px;
       text-decoration: none;
-      font-size: 20px;
+      font-size: 15px;
       color: #818181;
       display: block;
       border: none;
@@ -153,62 +153,62 @@
 
 <!-- Side Navigation Bar -->
 <div class="sidenav">
-  <a href="javascript:void(0)" onclick="showSection('dashboard')">Dashboard</a>
+  <a href="index.html"><i class="fa fa-home"></i> Home</a>
+  <a href="javascript:void(0)" onclick="showSection('dashboard')"><i class="fa fa-tachometer"></i> Dashboard</a>
   
   <!-- CRM Submenu -->
-  <button class="dropdown-btn" onclick="toggleDropdown('email-sms')">Email/SMS Communication 
+  <button class="dropdown-btn" onclick="toggleDropdown('email-sms')"><i class="fa fa-envelope"></i> Email/SMS Communication 
     <i class="fa fa-caret-down"></i>
   </button>
   <div class="dropdown-container" id="email-sms">
-    <a href="javascript:void(0)" onclick="showSection('email')">Send Email</a>
-    <a href="javascript:void(0)" onclick="showSection('sms')">Send SMS</a>
+    <a href="javascript:void(0)" onclick="showSection('email')"><i class="fa fa-paper-plane"></i> Send Email</a>
+    <a href="javascript:void(0)" onclick="showSection('sms')"><i class="fa fa-comment"></i> Send SMS</a>
   </div>
 
-  <button class="dropdown-btn" onclick="toggleDropdown('lead-management')">Lead Management
+  <button class="dropdown-btn" onclick="toggleDropdown('lead-management')"><i class="fa fa-users"></i> Lead Management
     <i class="fa fa-caret-down"></i>
   </button>
   <div class="dropdown-container" id="lead-management">
-    <a href="javascript:void(0)" onclick="showSection('view-leads')">View Leads</a>
-    <a href="javascript:void(0)" onclick="showSection('add-leads')">Add Leads</a>
-    <a href="javascript:void(0)" onclick="showSection('manage-leads')">Manage Leads</a>
+    <a href="javascript:void(0)" onclick="showSection('view-leads')"><i class="fa fa-eye"></i> View Leads</a>
+    <a href="javascript:void(0)" onclick="showSection('add-leads')"><i class="fa fa-plus"></i> Add Leads</a>
+    <a href="javascript:void(0)" onclick="showSection('manage-leads')"><i class="fa fa-cogs"></i> Manage Leads</a>
   </div>
 
-  <button class="dropdown-btn" onclick="toggleDropdown('property-management')">Property Management
+  <button class="dropdown-btn" onclick="toggleDropdown('property-management')"><i class="fa fa-home"></i> Property Management
     <i class="fa fa-caret-down"></i>
   </button>
   <div class="dropdown-container" id="property-management">
-    <a href="javascript:void(0)" onclick="showSection('view-properties')">View Properties</a>
-    <a href="javascript:void(0)" onclick="showSection('add-properties')">Add Properties</a>
-    <a href="javascript:void(0)" onclick="showSection('manage-properties')">Manage Properties</a>
+    <a href="javascript:void(0)" onclick="showSection('view-properties')"><i class="fa fa-eye"></i> View Properties</a>
+    <a href="javascript:void(0)" onclick="showSection('add-properties')"><i class="fa fa-plus"></i> Add Properties</a>
+    <a href="javascript:void(0)" onclick="showSection('manage-properties')"><i class="fa fa-cogs"></i> Manage Properties</a>
   </div>
 
-  <button class="dropdown-btn" onclick="toggleDropdown('reporting-analytics')">Reporting Analytics
+  <button class="dropdown-btn" onclick="toggleDropdown('reporting-analytics')"><i class="fa fa-bar-chart"></i> Reporting Analytics
     <i class="fa fa-caret-down"></i>
   </button>
   <div class="dropdown-container" id="reporting-analytics">
-    <a href="javascript:void(0)" onclick="showSection('sales-report')">Sales Report</a>
-    <a href="javascript:void(0)" onclick="showSection('lead-report')">Lead Report</a>
-    <a href="javascript:void(0)" onclick="showSection('performance-report')">Performance Report</a>
+    <a href="javascript:void(0)" onclick="showSection('sales-report')"><i class="fa fa-line-chart"></i> Sales Report</a>
+    <a href="javascript:void(0)" onclick="showSection('lead-report')"><i class="fa fa-pie-chart"></i> Lead Report</a>
+    <a href="javascript:void(0)" onclick="showSection('performance-report')"><i class="fa fa-bar-chart"></i> Performance Report</a>
   </div>
 
-  <button class="dropdown-btn" onclick="toggleDropdown('transaction-management')">Transaction Management
+  <button class="dropdown-btn" onclick="toggleDropdown('transaction-management')"><i class="fa fa-credit-card"></i> Transaction Management
     <i class="fa fa-caret-down"></i>
   </button>
   <div class="dropdown-container" id="transaction-management">
-    <a href="javascript:void(0)" onclick="showSection('transaction-history')">Transaction History</a>
-    <a href="javascript:void(0)" onclick="showSection('add-transaction')">Add Transaction</a>
+    <a href="javascript:void(0)" onclick="showSection('transaction-history')"><i class="fa fa-history"></i> Transaction History</a>
+    <a href="javascript:void(0)" onclick="showSection('add-transaction')"><i class="fa fa-plus"></i> Add Transaction</a>
   </div>
 
-  <a href="javascript:void(0)" onclick="showSection('crm-settings')">CRM Settings</a>
+  <a href="javascript:void(0)" onclick="showSection('crm-settings')"><i class="fa fa-cogs"></i> CRM Settings</a>
 </div>
 
 <!-- Main Content -->
 <div class="main">
-  <h2>CRM Dashboard</h2>
-  <p>Welcome back, John Doe! Here’s an overview of your CRM system:</p>
-
   <!-- Dashboard Overview Section -->
   <div id="dashboard" class="content-section active-section">
+    <h2>CRM Dashboard</h2>
+    <p>Welcome back, John Doe! Here’s an overview of your CRM system:</p>
     <h3>CRM Dashboard Overview</h3>
     <div class="dashboard">
       <!-- Leads Card -->
@@ -383,6 +383,6 @@
       dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
     }
   </script>
-  
-  </body>
+
+</body>
 </html>
