@@ -5,28 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Property Lookup</title>
     <script src="script.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+
     <h1>Property Lookup</h1>
-    <form id="lookupForm">
-        <label for="streetAddress">Street Address:</label>
-        <input type="text" id="streetAddress" required><br>
 
-        <label for="city">City:</label>
-        <input type="text" id="city" required><br>
+    <div class="container">
+        <form id="lookupForm">
+            <label for="streetAddress">Street Address:</label>
+            <input type="text" id="streetAddress" placeholder="Enter street address" required>
 
-        <label for="state">State:</label>
-        <input type="text" id="state" required><br>
+            <label for="city">City:</label>
+            <input type="text" id="city" placeholder="Enter city" required>
 
-        <label for="zip">Zip Code:</label>
-        <input type="text" id="zip" required><br>
+            <label for="state">State:</label>
+            <input type="text" id="state" placeholder="Enter state" required>
 
-        <label for="aptAddress">Apt Address (optional):</label>
-        <input type="text" id="aptAddress"><br>
+            <label for="zip">Zip Code:</label>
+            <input type="text" id="zip" placeholder="Enter zip code" required>
 
-        <button type="submit">Search</button>
-    </form>
+            <label for="aptAddress">Apt Address (optional):</label>
+            <input type="text" id="aptAddress" placeholder="Enter apartment address">
 
-    <pre id="result"></pre>
+            <button type="submit">Search</button>
+        </form>
+
+        <!-- The table will be populated here -->
+        <div id="result" class="result">
+            <!-- The JSON data will be dynamically rendered into a table -->
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Powered by <a href="https://www.senw.io/" target="_blank">SENW</a></p>
+    </div>
+
 </body>
 </html>

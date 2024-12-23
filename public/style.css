@@ -1,20 +1,106 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-}
-h1 {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
     color: #333;
+    margin: 0;
+    padding: 0;
 }
+
+h1 {
+    text-align: center;
+    color: #4CAF50;
+    margin-top: 30px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 form {
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
 }
-input, button {
-    padding: 10px;
+
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input[type="text"] {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
     font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
 }
-.result {
+
+input[type="text"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+button {
+    padding: 12px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
     margin-top: 20px;
-    padding: 15px;
-    border: 1px solid #ccc;
-    background: #f9f9f9;
+    background-color: #fff;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f7fc;
+    color: #4CAF50;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(even) td {
+    background-color: #f1f1f1;
+}
+
+tr:hover td {
+    background-color: #e1f5e1;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #777;
+}
+
+.footer a {
+    color: #4CAF50;
+    text-decoration: none;
 }
